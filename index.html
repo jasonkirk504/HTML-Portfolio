@@ -6,41 +6,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jason's Website</title>
+    <title>Jason Kirk</title>
+    <link rel=stylesheet href="./styles.css" />
   </head>
 
   <body>
-    <h1>Jason Kirk</h1>
-    <h2>Your friendly neighborhood software dev.</h2>
-    <hr>
-    <h3><a href="public/resume.html">My Resume</a></h3>
-    <h3>Some Projects I'm Working On:</h3>
-    <h4>Furthur</h4>
-    <img src="assets/images/Bus.png" height="200" width="400" alt="a bus">
-    <p> "I think I'll always be on the bus."</p>
-    <h4><a href="public/movie-ranking.html">Absolute Cinema</a></h4>
-    <img src="assets/images/movie-ranking.png" 
-      height="300" width="400" alt="picture listing my favorite movies">
-    <p>Cinema.</p>
- 
-    </p>
-    <hr>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Get in Touch</a>
+    <div id="top"></div>
+    <header class="sticky-header">
+      <div class="logo-link">
+        <a href="#top">JK</a>
+      </div>
+      <div class="center-links">
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+        <a href="#about-section">About Me</a>
+      </div>
+        <img class="grateful-dead" src="assets/images/dead.webp" alt="Steal Your Face logo"/>
+    </header>
+    <div class="page">
+      <section id="about-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="profile-picture">
+            <img src="assets/images/profile.webp"" alt="Me and my girlfriend at the Sphere in Vegas" />
+          </div>
+          <div class="about-text">
+            <h1>Jason Kirk</h1>
+            <p>
+              I am currently a software engineer for L3Harris, working as a contractor 
+              for the Federal Aviation Administration. I maintain air traffic control 
+              system software and assist with in-house tool creation at request of the FAA.  
+            </p>
+            <p>
+              In my current role as a Software Engineer at L3Harris Technologies, I have 
+              been maintaining and updating software systems for legacy air traffic control 
+              systems. My experience includes configuring air traffic control academy 
+              training workstations through Python scripting within a RHEL (Linux) 
+              environment, writing a Wireshark packet dissector for custom communication 
+              protocols in Lua, and creating custom tools such as a portable report generation
+              tool for air traffic control floor managers with C# and .NET WPF. Other 
+              responsibilities include collaborating
+              with cross-functional teams to refine project requirements, writing technical 
+              documents adhering to the Waterfall model, conducting unit and build testing,
+              and conducting code reviews. 
+            </p>
+            <p>
+              Alright, that's enough LinkedIn jargon. Like most of my generation, I'm super
+              into video games. I have [way] too many hours in Counter-Strike. My other 
+              various interests include learning game development with
+              the Godot game engine, 3D modeling and sculpting low-poly assets in Blender,
+              movies, chess, hiking, and last but certainly not least, the Philadelphia 76ers. 
+              They are my reality television. I also spend a lot of time learning different 
+              software and programming languages on Udemy, Youtube or GameDev.tv.
+            </p>
+          </div>
+        </div>
+
+      </section>
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+          <a href="public/resume.html" class="widget-link">
+            <div class="project-widget" id="bus-widget">
+              <h3>The Bus</h3>
+            </div>
+          </a>
+          <a href="public/resume.html" class="widget-link">
+            <div class="project-widget" id="rise-widget">
+              <h3>RISE</h3>
+            </div>
+          </a>
+        </div>
+        
+      </section>
+      <section id="media">
+        <h2 class="section-title">Worth Your Time?</h2>
+        <div class="WYT-intro">
+          <p>Trying to improve my writing by reviewing things that renew my faith in humanity... </p>
+          <div class="media-div">
+            <h3 class="movie-text">Recently Watched:</h3>
+            <img src="assets/images/obaa.webp"
+          </div>
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-div">
+          <h3>© 2025 Jason Kirk. All Rights Reserved.</h3>
+          <div class="footer-links">
+            <a href="public/contact.html">Get in Touch</a>
+            <a href="public/resume.html">My Resume</a>
+            <a href="public/contact.html">GitHub</a>
+            <a href="https://letterboxd.com/jason_kirk/" target="_blank"
+               rel="noopener noreferrer">Letterboxd</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 
 </html>
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
