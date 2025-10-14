@@ -69,6 +69,9 @@ hr {
   background-color: #254D70;
   color: #F6F6F6;
   padding: 10px;
+  font-size: 30pt; 
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .logo-link a:hover {
@@ -91,6 +94,7 @@ hr {
 .grateful-dead {
   height: 80px;
   width: auto;
+  margin-right: 10px;
 }
 
 /* Section Stuff */
@@ -111,7 +115,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
-  align-items: flex-start;
   padding: 40px 80px;
 }
 
@@ -119,6 +122,8 @@ hr {
   width: 250px;
   height: auto;
   border-radius: 20px;
+  align-items: stretch; /* <--- This is the key change */
+  object-fit: cover;
 }
 
 .about-text {
@@ -145,21 +150,19 @@ hr {
 /* Projects Section */
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 40px 80px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column; /* Stack them vertically */
+  align-items: center;
+  gap: 50px;
+  padding: 40px 60px;
 }
 
 .widget-link {
   text-decoration: none;
   color: inherit;
   display: flex;
-  flex: 1 1 auto;
-  width: 80%;
-  max-width: 800px;
-  /* flex: 1 1 300px; */
+  width: 100%;
+  /* max-width: 1200px; */
 }
 
 .project-widget {
@@ -178,32 +181,77 @@ hr {
   box-shadow: 20px 20px 20px rgba(0,0,0,0.3);
 }
 
-#bus-widget {
-  background-color: blue;
+#rise-widget {
+  background-color: rgb(102, 193, 233);
+  overflow: hidden;
 }
+
+#s2ym-widget {
+  background-color: rgba(0, 255, 68, 0.341);
+  overflow: hidden;
+}
+
+.content-flex {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.image-container {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  flex: 2;
+  padding: 10px;
+  color: #254d70;
+}
+
+.text-container h3 {
+  font-size: 20pt;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.text-container h4 {
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 12pt;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.rise-image {
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block; /* Ensure image is centered inside widget*/
+  margin: 0;
+}
+
+.s2ym-image {
+  max-width: 100%;
+  width: auto;
+  max-height: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block; /* Ensure image is centered inside widget*/
+  margin: 0;
+  border-radius: 25%;
+}
+
 
 /* Interests Section */
-.media-div {
 
-  padding: 30px 40px;
-}
-
-.media-div img {
-  width: 400px;
-  
-}
-
-.WYT-intro {
-  font-size: 20pt;
-  display: flex;
-  gap: 50px;
-  flex-direction: column;
-}
-
-.WYT-intro p {
-  text-align: center;
-  padding: 20px;
-}
 
 /* Footer */
 .footer-div {
